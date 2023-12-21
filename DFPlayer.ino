@@ -229,3 +229,8 @@ void notifyFastClock( uint8_t Rate, uint8_t Day, uint8_t Hour, uint8_t Minute, u
 #endif    
   SetFastClock(Rate, Day, Hour, Minute, Sync);
 }
+
+void notifyFastClockFracMins(uint16_t FracMins)
+{
+  HandleFracMins(FracMins);
+}
