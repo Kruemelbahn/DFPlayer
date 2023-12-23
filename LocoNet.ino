@@ -1,5 +1,5 @@
 //=== LocoNet for DFPlayer ===
-#include <LocoNetKS.h>
+#include <LocoNet.h>
 
 //=== declaration of var's =======================================
 LocoNetFastClockClass  FastClock;

@@ -15,5 +15,4 @@ For more details please refer to the [manual](AVRSound_DFPlayer-Sound-FRED.pdf).
 ### Requested libraries
 DFPlayer requires my libraries listed below in addition to various Arduino standard libraries:<br> 
 - [HeartBeat](https://www.github.com/Kruemelbahn/HeartBeat)
-- [LocoNetKS](https://www.github.com/Kruemelbahn/LocoNetKS)
 - [OLEDPanel](https://www.github.com/Kruemelbahn/OLEDPanel)
