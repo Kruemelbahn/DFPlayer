@@ -12,6 +12,8 @@ For compilation as SoundFRED active/deactivate #defines in DFPlayer.ino and use 
 
 For more details please refer to the [manual](Documentation/AVRSound_DFPlayer-Sound-FRED.pdf).<br>
 
+A battery tray for holding the battery can be found [here](https://github.com/Kruemelbahn/3D-Printables/blob/main/Geh%C3%A4use%20und%20Komponenten/Akkuschale-SoundFred.stl)
+
 ### Requested libraries
 DFPlayer requires my libraries listed below in addition to various Arduino standard libraries:<br> 
 - [HeartBeat](https://www.github.com/Kruemelbahn/HeartBeat)
