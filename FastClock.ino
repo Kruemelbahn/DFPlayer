@@ -27,13 +27,13 @@ boolean b_SlaveClockLEDDisplayPresent = false;
 boolean b_FCButtonMirror = false;
 boolean b_FastClockReceived = false;
 boolean b_FastClockIsRunning = false;
-uint8_t ui8_FCHour;
-uint8_t ui8_FCMinute;
-uint8_t ui8_FCOut;
-uint8_t ui8_FCDay;
-uint8_t ui8_FCRate;
-uint8_t ui8_FCSync;
-uint16_t ui16_FCCount;
+uint8_t ui8_FCHour = 0;
+uint8_t ui8_FCMinute = 0;
+uint8_t ui8_FCOut = 0;
+uint8_t ui8_FCDay = 0;
+uint8_t ui8_FCRate = 0;
+uint8_t ui8_FCSync = 0;
+uint16_t ui16_FCCount = 0;
 
 boolean GetFastClockState() { return b_FastClockReceived; }
 
@@ -100,10 +100,10 @@ void HandleFastClock()
 	if (b_FastClockIsRunning && ENABLE_LN_FC_SLAVE && !ENABLE_LN_FC_INTERN)
 	{ // if ENABLE_LN_FC_INTERN is true, time will be calculated with the help of 'notifyFastClockFracMins'
 		// when FastClock is running: last SetFastClock (coming from EF/E7-telegram) not received since more then 60s 
-    unsigned long ulWaitingFoNextTelegram(60000);
+    unsigned long ulWaitingForNextTelegram(60000);
     if (ui8_FCRate)
-      ulWaitingFoNextTelegram /= ui8_FCRate;
-		if ((millis() - ul_LastSetFastClock) > ulWaitingFoNextTelegram)
+      ulWaitingForNextTelegram /= ui8_FCRate;
+		if ((millis() - ul_LastSetFastClock) > ulWaitingForNextTelegram)
 			PollFastClock();
 	}
 

@@ -104,7 +104,7 @@ discrete In/Outs used for functionalities:
 #define UNREFERENCED_PARAMETER(P) { (P) = (P); }
 
 #define MANUFACTURER_ID  13   // NMRA: DIY
-#define DEVELOPER_ID  58      // NMRA: my ID, should be > 27 (1 = FREMO, see https://groups.io/g/LocoNet-Hackers/files/LocoNet%20Hackers%20DeveloperId%20List_v27.html)
+#define DEVELOPER_ID  29      // NMRA: my ID, (1 = FREMO, see https://groups.io/g/LocoNet-Hackers/files/LocoNet%20Hackers%20DeveloperId%20List_v29.html)
 
 //=============================================
 

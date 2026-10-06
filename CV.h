@@ -12,7 +12,7 @@ enum {	ID_DEVICE = 0, SOUND_NO, SOUND_LEVEL, SOUND_MODUS, INP_INVERT, INP_NOT_CO
 //=== declaration of var's =======================================
 #define PRODUCT_ID SOFTWARE_ID
 static const uint8_t DEVICE_ID = 1;     // CV1: Device-ID
-static const uint8_t SW_VERSION = 21;   // CV7: Software-Version
+static const uint8_t SW_VERSION = 22;   // CV7: Software-Version
 static const uint8_t AVRSOUND = 5;      // CV8: Software-ID
 
 static const uint16_t MAX_LN_ADR = 2048;

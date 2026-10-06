@@ -275,6 +275,13 @@ void DisplayCV(uint16_t ui16_Value)
   if (ui8CvNr < 10)
     lcd.print(' ');
   lcd.print(ui8CvNr);
+  if (ui8CvNr == (SOFTWARE_ID + 1))  // CV8 = Software-ID
+  {
+    lcd.setCursor(6, 1);
+    lcd.print(MANUFACTURER_ID);
+    lcd.print(char(0xA5));
+    lcd.print(DEVELOPER_ID);
+  } // if (ui8CvNr == (SOFTWARE_ID + 1))  // CV8 = Software-ID
   --ui8CvNr;
 
   // show shortname:
